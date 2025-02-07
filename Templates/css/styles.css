@@ -3762,14 +3762,15 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
+  font-size: 1rem; /* Defini um tamanho padrão */
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
   background: none;
   border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -3783,9 +3784,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(26, 26, 26, 0.25);
 }
 .nav-link.disabled, .nav-link:disabled {
-  color: var(--bs-nav-link-disabled-color);
-  pointer-events: none;
-  cursor: default;
+    color: var(--bs-nav-link-disabled-color);
+    pointer-events: none;
 }
 
 .nav-tabs {
@@ -3819,7 +3819,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #1a1a1a;
+  --bs-nav-pills-link-active-bg: #fff;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -3874,8 +3874,9 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-x: 1rem;
   --bs-navbar-padding-y: 1.5rem;
+  --bs-nav-link-font-weight: 500; /* Adicionado peso da fonte */
   --bs-navbar-color: #fff;
   --bs-navbar-hover-color: #fff;
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
@@ -3885,6 +3886,9 @@ textarea.form-control-lg {
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-hover-color: #fff;
+  --bs-nav-link-disabled-color: #fff;
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -3894,15 +3898,11 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  background-color: #000 !important; /* Define a navbar como preta */
-  color: #fff !important; /* Texto e ícones brancos */
-  font-weight: 600; /* Fonte mais grossa */
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3917,11 +3917,8 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: var(--bs-navbar-brand-padding-y);
-  padding-bottom: var(--bs-navbar-brand-padding-y);
-  margin-right: var(--bs-navbar-brand-margin-end);
-  font-size: var(--bs-navbar-brand-font-size);
-  color: var(--bs-navbar-brand-color);
+  font-size: 1.25rem;
+  color: var(--bs-navbar-color);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -3941,7 +3938,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-
+  
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: var(--bs-navbar-active-color);
@@ -3973,7 +3970,7 @@ textarea.form-control-lg {
   line-height: 1;
   color: #fff;;
   background-color: transparent;
-  border: var(--bs-border-width) solid #fff;;
+  border: var(--bs-border-width) solid #fff;
   transition: var(--bs-navbar-toggler-transition);
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4293,12 +4290,11 @@ textarea.form-control-lg {
   color: #fff;
   --bs-navbar-color: rgb(190, 190, 190);
   --bs-navbar-hover-color: #fff;
-  --bs-navbar-disabled-color: #fff;
+  --bs-navbar-disabled-color: rgb(190, 190, 190);
   --bs-navbar-active-color: #fff;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: #fff;
-  
 }
 
 [data-bs-theme=dark] .navbar-toggler-icon {
