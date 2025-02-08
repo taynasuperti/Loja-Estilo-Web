@@ -3745,6 +3745,8 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: calc(0 * -1);
 }
+
+
 /* Ajuste do tamanho da logo */
 .navbar img {
   height: 70px; /* Ajuste o tamanho da logo */
@@ -3770,9 +3772,11 @@ textarea.form-control-lg {
 
 /* Ajuste da navbar */
 .navbar {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; /* Reduz a altura da navbar */
-  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #000 !important; /* Cor da navbar alterada para preto */
 }
 
 /* Ajuste dos links da navbar */
