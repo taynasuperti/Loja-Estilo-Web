@@ -209,7 +209,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: #302e2e;
   text-align: var(--bs-body-text-align);
-  background-color: #302e2e !important;
+  background-color: #f5f5f5 !important;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -227,7 +227,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #fff !important;
+  color:  var(--bs-heading-color);
 }
 
 h1, .h1 {
@@ -412,7 +412,6 @@ figure {
 img,
 svg {
   vertical-align: middle;
-  border-radius: 8px;
 }
 
 table {
@@ -712,7 +711,6 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  
 }
 
 .img-thumbnail {
@@ -3860,7 +3858,7 @@ header .text-center {
   background-color: var(--bs-card-bg);
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: 8px;
+  border-radius: 5px;
 }
 .card > hr {
   margin-right: 0;
