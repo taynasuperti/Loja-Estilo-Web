@@ -207,9 +207,9 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: #141414;
+  color: #302e2e;
   text-align: var(--bs-body-text-align);
-  background-color: #141414 !important;
+  background-color: #302e2e !important;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -412,6 +412,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  border-radius: 8px;
 }
 
 table {
@@ -711,6 +712,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  
 }
 
 .img-thumbnail {
@@ -3858,6 +3860,7 @@ header .text-center {
   background-color: var(--bs-card-bg);
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: 8px;
 }
 .card > hr {
   margin-right: 0;
