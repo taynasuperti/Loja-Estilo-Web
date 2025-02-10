@@ -3801,29 +3801,47 @@ textarea.form-control-lg {
 /* Carrossel */
 /* Ajusta a altura do carrossel */
 .carousel {
-  height: 500px; /* Defina a altura do carrossel para 500px */
+  position: relative;
+  height: 500px; /* Mantém a altura do carrossel */
 }
 
 /* Ajusta as imagens dentro do carrossel */
 .carousel-inner img {
-  height: 500px; /* Define a altura das imagens do carrossel para 500px */
-  object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+  height: 500px;
+  object-fit: cover;
 }
 
-/* Ajuste do botão para não ficar muito alto */
+/* Ajusta os botões de controle */
 .carousel-control-prev, .carousel-control-next {
-  height: 100%; /* Define a altura total do controle */
-  top: 0; /* Ajusta a posição vertical dos controles */
+  height: 100%;
+  top: 0;
 }
 
-/* Ajusta os cards que ficam abaixo do carrossel */
+/* Ajusta os cards abaixo do carrossel */
 .container {
-  margin-top: 30px; /* Adiciona margem entre o carrossel e os cards */
+  margin-top: 30px;
 }
 
-/* Ajusta o texto do cabeçalho para se ajustar melhor ao carrossel */
-header .text-center {
-  padding-bottom: 50px; /* Adiciona um pequeno espaço abaixo do texto */
+/* Texto na parte inferior do carrossel com 50px de margem */
+.carousel-caption-custom {
+  position: absolute;
+  bottom: 50px; /* Definindo a margem de 50px da parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.carousel-caption-custom h1 {
+  font-family:  var(--bs-font-sans-serif) ;
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  /* background: rgba(0, 0, 0, 0.6); /* Fundo escuro para legibilidade */
+  padding: 10px 20px;
+  border-radius: 10px; */
 }
 
 
@@ -7686,7 +7704,6 @@ header .text-center {
 
 .fw-bolder {
   font-weight: bolder !important;
-  
 }
 
 .lh-1 {
