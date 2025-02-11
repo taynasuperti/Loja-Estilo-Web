@@ -1,8 +1,398 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/img/slides/carrossel-5.jpg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+            <img src="~/img/slides/carrossel-10.jpg" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+            <img src="~/img/slides/carrossel-6.jpg" class="d-block w-100" alt="Imagem 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+    <div class="carousel-caption-custom">
+        <h1>MONTE SUA SETUP COM ESTILO!</h1>
+    </div>
+    <div>
+
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/6/mesa-gamer-1.jpg"
+                                alt="Mesa para Escritório Diretor Estilo Industrial 150cm Kuadra" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Mesa Kuadra 150cm</h5>
+                                    <!-- Product price-->
+                                    R$430,00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/5/mousepaad-1-1.jpeg"
+                                alt="Mouse pad de carregamento sem fio Firelison 2 em 1" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Mouse Pad Firelison 2 em 1 </h5>
+                                    <!-- Product price-->
+                                    R$411,78
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Promoção</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/17/monitor-3.jpg"
+                                alt="Monitor MSI Pro MP241CAW 24 FHD 75Hz Curvo VA Branco" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Monitor MSI Pro MP241CAW 24</h5>
+                                    <div class="text-muted text-decoration-line-through">R$ 2.764,00</div>
+                                    <!-- Product price-->
+                                    <div class="fw-bold text-success">R$ 2.564,00</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/10/suporte-monitor-1.jpg"
+                                alt="Suporte Articulado Com Pistao a Gas Para Monitor Zinnia Nimbo 100, 17 Pol. a 27 Pol., Branco, ZNO-ZNNBO100-WH01" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Suporte Articulado Zinnia Nimbo 100</h5>
+                                    <!-- Product price-->
+                                    R$129,99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/3/suporte-1.jpg"
+                                alt="Base Suporte Ergonômico Para Notebook Tablet Dobrável top - Home Good" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Base Ergonômica Home Goods</h5>
+                                    <!-- Product price-->
+                                    R$50,15
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/11/led-monitor-4.jpg"
+                                alt="Barra de LED para Monitor Pcyes PLMLCB01, 447x85mm, Regulagem Touch, USB, Preto - 111552" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Barra de LED Pcyes</h5>
+                                    <!-- Product price-->
+                                    R$169,90
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Promoção</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/8/web-cam-1.jpg"
+                                alt="Web cam aicoco 2k Web Cam Com Microfone Ai Auto Ac610" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Webcam Aicoco 2K</h5>
+                                    <div class="text-muted text-decoration-line-through">R$ 649,00</div>
+                                    <!-- Product price-->
+                                    <div class="fw-bold text-success">R$ 584,10</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Promoção</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/1/teclado-mecanico-3.jpg"
+                                alt="TECLADO EPOMAKER RT100" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Teclado EPOMAKER RT100</h5>
+                                    <div class="text-muted text-decoration-line-through">R$649,00</div>
+                                    <!-- Product price-->
+                                    <div class="fw-bold text-success">R$554,22</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Promoção</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/2/mouse-4.png"
+                                alt="Mouse Gamer Sem Fio Logitech G PRO X SUPERLIGHT 2 com LIGHTSPEED e Bateria Recarregável" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Mouse Logitech G PRO X SUPERLIGHT 2</h5>
+                                    <div class="text-muted text-decoration-line-through">R$941,91</div>
+                                    <!-- Product price-->
+                                    <div class="fw-bold text-success">R$847,71</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/7/fone-1.jpg"
+                                alt="Headtset Gamer Redragon Zeus Pro, Surround 7.1, Cabo USB-C Removível, Wireless, c/Microfone, Preto - H510-PRO" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Headset Redragon Zeus Pro</h5>
+                                    <!-- Product price-->
+                                    R$430,00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Promoção</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/16/caixa-de-som-1.jpg"
+                                alt="Caixa de som Gamer G2000 Bluetooth 16W RMS EDIFIER - Branco" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Caixa de Som EDIFIER G2000</h5>
+                                    <div class="text-muted text-decoration-line-through">R$499,00</div>
+                                    <!-- Product price-->
+                                    <div class="fw-bold text-success">R$449,10</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/9/apoio-de-pulso.jpg"
+                                alt="Suporte de pulso ergonômico para teclado em formato de nuvem" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Suporte de Pulso Nuvem</h5>
+                                    <!-- Product price-->
+                                    R$313,00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Promoção</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/14/eilik-1.jpg"
+                                alt="ilik Robô - Robô Inteligente" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Eilik Robô</h5>
+                                    <div class="text-muted text-decoration-line-through">R$1.599,00</div>
+                                    <!-- Product price-->
+                                    <div class="fw-bold text-success">R$ 1.439,10</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/12/relogio-2.jpeg"
+                                alt="Relógio Digital 3D LED De Parede e Mesa Design Moderno Luz Noturna Decoração" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Relógio Digital 3D LED</h5>
+                                    <!-- Product price-->
+                                    R$40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/15/difusor-2.webp"
+                                alt="Umidificador em forma de nuvem com suporte dourado" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Umidificador Nuvem</h5>
+                                    <!-- Product price-->
+                                    R$285,00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                                Promoção</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="~/img/produtos/4/cadeira-1.webp"
+                                alt="Cadeira Gamer Flexform Delta White N Blue" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cadeira Gamer Flexform Delta</h5>
+                                    <div class="text-muted text-decoration-line-through">R$1.619,10</div>
+                                    <!-- Product price-->
+                                    <div class="fw-bold text-success">R$1.457,19</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver
+                                        opções</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

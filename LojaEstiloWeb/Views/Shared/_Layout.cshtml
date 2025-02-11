@@ -1,49 +1,68 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LojaEstiloWeb</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/LojaEstiloWeb.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LojaEstiloWeb</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Projeto desenvolvido para estudo de aplicação web, usando .NET 8 padrão MVC para criação de um site para expor os produtos de uma loja, utilizando SQL Server para o banco de dados." />
+    <meta name="author" content="Tayná Superti"/>
+    <title>Estilo Web | @ViewData["Title"]</title>
+    <!-- Favicon-->
+    @*<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />*@
 
-    <footer class="border-top footer text-muted">
+    <!-- Bootswatch -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/lux/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <link href="~/css/site.css"   rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                <img src="./img/logo/logo3.png" alt="Loja Estilo Web" class="me-3">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="QuemSomos">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Contatos">Contatos</a></li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-white" type="submit">
+                        <i class="bi-cart-fill me-1" color="#fff"> Carrinho</i>
+
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">
+                            @ViewData["Carrinho"]
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
         <div class="container">
-            &copy; 2025 - LojaEstiloWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <p class="m-0 text-center text-white">Copyright &copy; LEW 2025</p>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/js/site.js"></script>
 </body>
+
 </html>
