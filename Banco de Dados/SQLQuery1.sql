@@ -8,13 +8,13 @@ INSERT INTO Categoria(Nome, ExibirHome) VALUES
 ('Cadeiras', 1), -- categoria 2
 ('Fones', 1), -- categoria 3
 ('Leds', 0), -- categoria 4
-('Mesas', 0), -- categoria 5
+('Mesas', 1), -- categoria 5
 ('Monitores', 1), -- categoria 6
 ('Mouses', 1), -- categoria 7
 ('Mouse pad', 0), -- categoria 8
 ('Relógios', 0), -- categoria 9
 ('Caixas de Som', 1), -- categoria 10
-('Suportes para Monitor', 1), -- categoria 11
+('Suportes para Monitor', 0), -- categoria 11
 ('Suportes para Notbook', 0), -- categoria 12
 ('Suportes de pulso', 0), --categoria 13
 ('Teclados', 1), -- categoria 14
@@ -44,11 +44,11 @@ VALUES ('Escrivaninha Em L Max Zanzini', 'Escrivaninha Em L Max Zanzini',
 -- Mouse pads
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Mouse pad de carregamento sem fio Firelison 2 em 1', 'Mouse Pad Firelison 2 em 1',
-310.90, 411.78, 1, 8);
+310.90, 411.78, 0, 8);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Mouse Pad Gamer Criarte, Speed Extra Grande, Abstract Premium, Preto E Branco - 70x30 Cm',
-'Mouse Pad Gamer Criarte', 35.90, 55.90, 1, 8);
+'Mouse Pad Gamer Criarte', 35.90, 55.90, 0, 8);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Mousepad Techsource - Topo Black V2', 'Mousepad Techsource V2',
@@ -80,7 +80,7 @@ VALUES ('Monitor curvo de 34 com tecnologia QD-OLED e AMD FreeSync™ Premium Pro'
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Suporte de monitor Armstrong DUO Branco - Elements', 'Suporte de Monitor Armstrong DUO Branco',
-590.95, 849.00, 1, 11);
+590.95, 849.00, 0, 11);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Suporte De Mesa Duplo Com Pistão A Gás 14 À 32'' Sim-2500 Cor Preto', 
@@ -92,7 +92,7 @@ VALUES ('Suporte Articulado Com Pistao a Gas Para Monitor Zinnia Nimbo 100, 17 P
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Suporte Para Monitor De Parede A Gás 17 A 32 Articulado Vesa Cor Preto',
-'Suporte Articulado 17''-32'' VESA', 250.85, 279.99, 1, 11);
+'Suporte Articulado 17''-32'' VESA', 250.85, 279.99, 0, 11);
 
 -- Suporte para notebooks 
 
@@ -102,11 +102,11 @@ VALUES ('Suporte Dobrável Ergonômico Portátil Slim Para Notebook Tablet Ajustáve
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Suporte Mesa Base Notebook Alumínio Regulável Leitura Cor Preto', 'Suporte Regulável de Alumínio para Notebook',
-65.85, 79.53, 1, 12);
+65.85, 79.53, 0, 12);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Suporte Notebook Aluminio Regulavel Base Giratoria 360º', 'Suporte Regulável de Alumínio para Notebook com Base Giratória 360º', 
-95.75, 115.99, 1, 12);
+95.75, 115.99, 0, 12);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Base Suporte Ergonômico Para Notebook Tablet Dobrável top - Home Good', 'Suporte Ergonômica Home Goods',
@@ -128,13 +128,13 @@ VALUES ('Bases Luminária Led Monitor E Notebooks Regulável Cor Preta', 'Led para
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Gugxiom Barra de luz curvada para monitor, lâmpada de monitor de computador, barra de LED para monitor de PC com 3 ajustes de temperatura de cor e 7 cores RGB, luz de monitor óptico assimétrica de 5V',
-'Barra de Luz LED Curva para Monitor com 3 temperaturas de cor e 7 cores RGB', 259.69, 278.10, 1, 4);
+'Barra de Luz LED Curva para Monitor com 3 temperaturas de cor e 7 cores RGB', 259.69, 278.10, 0, 4);
 
 -- Webcam
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Web cam aicoco 2k Web Cam Com Microfone Ai Auto Ac610', 'Webcam Aicoco 2K', 
-489.99, 584.10, 1, 16);
+489.99, 584.10, 0, 16);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Webcam Philips SPL6208 1080P com microfone para streaming de PC', 'Webcam Philips com microfone', 
@@ -142,7 +142,7 @@ VALUES ('Webcam Philips SPL6208 1080P com microfone para streaming de PC', 'Webc
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Logitech StreamCam Webcam USB-C Full HD Blanca', 'Webcam USB-C Full HD Branca', 
-598.99, 658.96, 1, 16);
+598.99, 658.96, 0, 16);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('1080p Full Hd Usb Webcam Para PC Desktop Laptop Web Camera Com Microfone Fhd - HUOGUO',
@@ -224,7 +224,7 @@ VALUES ('Bestisan SR04 Bluetooth Bookshelf Speakers for Record Player, Powered S
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Suporte de pulso ergonômico para teclado em formato de nuvem', 'Suporte de Pulso Nuvem',
-295.89, 320.00, 1, 13);
+295.89, 320.00, 0, 13);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Apoio De Pulso Multilaser Para Teclado Em Gel Preto - Ac033 Desenho impresso Liso 51cm de comprimento e 6cm de largura, 2cm de altura',
@@ -232,7 +232,7 @@ VALUES ('Apoio De Pulso Multilaser Para Teclado Em Gel Preto - Ac033 Desenho imp
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Bloss Almofada de mesa de couro e descanso de pulso para teclado, mouse pad grande + teclado + suporte de pulso para mouse, protetor de mesa antiderrapante para escritório, casa (80 x 40 cm, bege)',
-'Suporte de Pulso e Mouse Pad', 195.85, 214.75, 1, 13);
+'Suporte de Pulso e Mouse Pad', 195.85, 214.75, 0, 13);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Suporte de descanso de pulso para teclado e mouse, com espuma de memória ergonômica, base antiderrapante para escritório doméstico, laptop, desktop',
@@ -261,21 +261,21 @@ VALUES ('Alexa Echo Dot Geração Alexa Smart Speaker Wi-Fi - Amazon', 'Alexa Echo
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Relógio Digital 3D LED De Parede e Mesa Design Moderno Luz Noturna Decoração', 'Relógio Digital 3D LED',
-25.00, 40.00, 1, 9);
+25.00, 40.00, 0, 9);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Relógio despertador digital, Relógio LED para quarto, Relógio eletrônico de mesa com visor de temperatura, brilho ajustável, controle de voz, visor 12/24H para casa, dormitório, escritório',
-'Relógio LED Digital', 45.99, 52.90, 1, 9);
+'Relógio LED Digital', 45.99, 52.90, 0, 9);
 
 -- Umidificadores
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Umidificador em forma de nuvem com suporte dourado', 'Umidificador Nuvem',
-189.99, 285.00, 1, 9);
+189.99, 285.00, 0, 9);
 
 INSERT INTO Produto(Nome, Descricao, QtdeEstoque, ValorCusto, ValorVenda, Destaque, CategoriaId)
 VALUES ('Umidificador Ar Aromatizador Purificador Portátil Led 500ml', 'Umidificador Led 500ml', 
-65.90, 78.99, 1, 9);
+65.90, 78.99, 0, 9);
 
 -- Cadeiras
 
