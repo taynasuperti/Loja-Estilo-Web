@@ -1,7 +1,9 @@
 --Criar banco
-CREATE DATABASE loja; --cria o banco de dados
+CREATE DATABASE lojinha; --cria o banco de dados
+go
 
-use loja; --coloca o banco em uso
+use lojinha; --coloca o banco em uso
+go
 
 CREATE TABLE Categoria --cria as tabelas
 (
@@ -14,7 +16,7 @@ CREATE TABLE Categoria --cria as tabelas
 CREATE TABLE Produto
 (
 	Id			int not null identity primary key,
-	Nome		varchar(100) not null, 
+	Nome		varchar(200) not null, 
 	Descricao	varchar(1000),
 	CategoriaId	int not null,
 	ValorCusto	numeric(10,2),
@@ -27,7 +29,7 @@ CREATE TABLE Produto
 CREATE TABLE  ProdutoFoto
 (
 	Id			int not null identity primary key,
-	ProtudoId	int not null,
+	ProdutoId	int not null,
 	Foto		varchar(200) not null,
 	Descricao	varchar(100),
 	foreign key (ProdutoId) references Produto(Id)

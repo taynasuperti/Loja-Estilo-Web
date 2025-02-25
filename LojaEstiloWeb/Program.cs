@@ -1,7 +1,16 @@
+using LojaEstiloWeb.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Adicionar o serviço de conexão com o banco
+string conexao = builder.Configuration.GetConnectionString("LojaConexao");
+builder.Services.AddDbContext<AppDbContext>(
+    options => options.UseSqlServer(conexao)
+);
 
 var app = builder.Build();
 

@@ -16,7 +16,7 @@ namespace LojaEstiloWeb.Models;
 
         public Categoria Categoria { get; set; }
         [Required(ErrorMessage = "Por favor, informe o Nome")]
-        [StringLength(100, ErrorMessage = "O nome deve possuir no máximo 100 carácteres")]
+        [StringLength(200, ErrorMessage = "O nome deve possuir no máximo 200 carácteres")]
         public string Nome { get; set; }
 
         [Display(Name = "Descrição")]
