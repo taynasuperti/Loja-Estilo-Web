@@ -19,6 +19,7 @@
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
+    using System.Security.Cryptography;
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="next">
@@ -34,6 +35,10 @@
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            @if (Model != null) 
+            { 
+                @* if é para caso não tenha dados no banco *@
+
                 @foreach (Produto produto in Model)
                 {
                     <div class="col mb-5">
@@ -41,16 +46,15 @@
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
                                 Promoção</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="~/img/produtos/6/mesa-gamer-1.jpg"
-                                alt="Mesa para Escritório Diretor Estilo Industrial 150cm Kuadra" />
+                            <img class="card-img-top" src="@produto.Fotos[0].Foto" alt="@produto.Nome" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Mesa Kuadra 150cm</h5>
-                                    <div class="text-muted text-decoration-line-through">R$430,00</div>
+                                    <h5 class="fw-bolder">@produto.Nome</h5>
+                                    <div class="text-muted text-decoration-line-through">R$  @( (produto.ValorVenda * 1.10M).ToString("N2") ) </div>
                                     <!-- Product price-->
-                                    <div class="fw-bold text-success">R$420,00</div>
+                                    <div class="fw-bold text-success">R$ @produto.ValorVenda.ToString("N2")0</div>
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -61,6 +65,11 @@
                         </div>
                     </div>
                 }
+            } else {
+                <h3>Aguardem Novidades !!!</h3>
+            }
+
+
             </div>
         </div>
     </section>

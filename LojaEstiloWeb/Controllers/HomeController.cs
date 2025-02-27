@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LojaEstiloWeb.Models;
 using LojaEstiloWeb.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace LojaEstiloWeb.Controllers;
 
@@ -19,7 +20,10 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewData["Carrinho"] = 5;
-        List<Produto> produtos = _db.Produtos.ToList();
+        List<Produto> produtos = _db.Produtos
+            .Where(p => p.Destaque)
+            .Include(p => p.Fotos)
+            .ToList();
         return View(produtos);
     }
 

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LojaEstiloWeb.Models
 {
-    [Table("Foto")]
+    [Table("ProdutoFoto")]
     public class ProdutoFoto
     {
         [Key]
