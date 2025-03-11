@@ -6,5 +6,9 @@
 
 .card-img-top:hover {
     transform: scale(1.2);
-    transition-duration: 1.4s;
+    transition-duration: 1.2s;
 }
+
+.btn-outline-dark:hover {
+    transform: scale(1.2);
+} 
