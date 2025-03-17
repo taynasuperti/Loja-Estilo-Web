@@ -1,0 +1,33 @@
+@model List<LojaEstiloWeb.Models.Categoria>
+@{
+    ViewData["Title"] = "Categorias";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="my-4">Categorias</h1>
+<a asp-controller="Categorias" asp-action="Create"
+    class="btn btn-primary mb-4">
+    <i class="fas fa-add me-1"></i> Adicionar
+</a>
+
+<table class="table table-striped w-100" border="1">
+    <thead>
+        <tr>
+            <th class="w-100">Nome</th>
+            <th>Ações&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Categoria categoria in Model)
+        {
+        <tr>
+            <td>@categoria.Nome</td>
+            <td>
+                <a href="#" title="Alterar"><i class="fas fa-edit" color="black"></i></a>
+                <a href="#" title="Detalhes"><i class="fas fa-search" color="black"></i></a>
+                <a href="#" title="Excluir"><i class="fas fa-trash" color="black"></i></a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
