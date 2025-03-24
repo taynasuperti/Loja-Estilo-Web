@@ -23,9 +23,9 @@
         <tr>
             <td>@categoria.Nome</td>
             <td>
-                <a href="#" title="Alterar"><i class="fas fa-edit" color="black"></i></a>
-                <a href="#" title="Detalhes"><i class="fas fa-search" color="black"></i></a>
-                <a href="#" title="Excluir"><i class="fas fa-trash" color="black"></i></a>
+                <a asp-action="Edit" asp-route-id="@categoria.Id" title="Alterar"><i class="fas fa-edit" color="black"></i></a>
+                <a asp-action="Details" asp-route-id="@categoria.Id" title="Detalhes"><i class="fas fa-search" color="black"></i></a>
+                <a asp-action="Delete" asp-route-id="@categoria.Id" title="Excluir"><i class="fas fa-trash" color="black"></i></a>
             </td>
         </tr>
         }

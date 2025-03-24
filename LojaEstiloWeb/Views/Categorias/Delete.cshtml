@@ -1,0 +1,38 @@
+
+@model LojaEstiloWeb.Models.Categoria
+@{
+    ViewData["Title"] = "Categorias";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="my-4">CATEGORIA</h1>
+<h4 class="mb-4">Excluir</h4>
+
+<div class="card my-4 border-dark border-2 rounded-2">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8 col-lg-10">
+                <div class="mb-3">
+                    <label asp-for="Nome" class="form-label"></label>
+                    <input asp-for="Nome" class="form-control p-2 border-dark border-2 rounded-2" readonly>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <label class="form-label">Prévia</label>
+                <img src='@(Model.Foto ?? @Url.Content("~/img/produto-sem-imagem.jpg"))' id="Preview" class="img-fluid">
+            </div>
+        </div>
+        <h4 class="text-danger w-100">
+            Você confirma a exclusão desta Categoria?
+        </h4>
+        <form asp-action="Delete" method="post" class="d-flex mt-4">
+            <input type="hidden" asp-for="Id">
+            <button type="submit" class="btn btn-outiline-danger me-2">
+                <i class="fas fa-trash me-1"></i> Excluir
+            </button>
+            <a asp-action="Index" class="btn btn-outiline-info">
+                <i class="fas fa-cancel me-1"></i> Cancelar
+            </a>
+        </form>
+    </div>
+</div>
