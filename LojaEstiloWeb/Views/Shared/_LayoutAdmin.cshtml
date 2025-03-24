@@ -8,9 +8,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>GStore - @ViewData["Title"]</title>
-    <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/admin.css">
-    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/styles.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     @await RenderSectionAsync("Styles", required: false)
 </head>
@@ -18,7 +17,7 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" asp-controller="Admin" asp-action="Index">GStore</a>
+        <a class="navbar-brand ps-3" asp-controller="Admin" asp-action="Index">Estilo Web</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 fs-4" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -89,6 +88,7 @@
         crossorigin="anonymous"></script>
     <script src="~/js/admin.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <partial name="_Notification"></partial>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    //Cria o objeto
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    // Implementando o js no dotnet
+    const message = @Html.Raw(Json.Serialize(TempData["Success"]));
+
+    if (message) {
+        Toast.fire({
+            icon: "success",
+            title: message
+        });
+    }
+
+    // Mostra o objeto
+    Toast.fire({
+        icon: "success",
+        title: "Signed in successfully"
+    });
+</script>
