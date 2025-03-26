@@ -100,12 +100,84 @@ namespace LojaEstiloWeb.Data;
                     Destaque = false
                 },
                 new() {
-                    Id = 7,
+                    Id = 8,
                     CategoriaId = 8,
                     Nome = "Mouse Pad Corsair",
                     Descricao = "Mouse Pad Corsair MM700 3XL RGB",
                     ValorCusto = 650.00m,
                     ValorVenda = 759.20m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                //monitores
+                new() {
+                    Id = 9,
+                    CategoriaId = 6,
+                    Nome = "Monitor MSI Pro MP241CAW 24 75Hz",
+                    Descricao = "Monitor MSI Pro MP241CAW 24 FHD 75Hz Curvo VA Branco",
+                    ValorCusto = 2764.00m,
+                    ValorVenda = 2564.00m,
+                    QtdeEstoque = 20,
+                    Destaque = true
+                },
+                new() {
+                    Id = 10,
+                    CategoriaId = 6,
+                    Nome = "Monitor MSI MAG301CR 30 200Hz",
+                    Descricao = "Monitor Gamer Curvo 30 MSI Optix MAG301CR / HDMI x2 / DP / WFHD / 200Hz / 1ms / HDR / MSI RGB Mystic Light",
+                    ValorCusto = 6999.99m,
+                    ValorVenda = 7499.99m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                new() {
+                    Id = 11,
+                    CategoriaId = 6,
+                    Nome = "Monitor GameMax GMX27C144 27 144Hz",
+                    Descricao = "Monitor GameMax Gamer Curvo 27 Pol 144Hz 1ms Full HD GMX27C144 Branco - Open Box",
+                    ValorCusto = 1000.00m,
+                    ValorVenda = 1359.32m,
+                    QtdeEstoque = 20,
+                    Destaque = true
+                },
+                new() {
+                    Id = 12,
+                    CategoriaId = 6,
+                    Nome = "Monitor FreeSync Pro",
+                    Descricao = "Monitor curvo de 34 com tecnologia QD-OLED e AMD FreeSync™ Premium Pro",
+                    ValorCusto = 6000.00m,
+                    ValorVenda = 6289.15m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                //suporte para monitores
+                new() {
+                    Id = 13,
+                    CategoriaId = 11,
+                    Nome = "Suporte de monitor Armstrong",
+                    Descricao = "Suporte de Monitor Armstrong DUO Branco - Elements",
+                    ValorCusto = 590.95m,
+                    ValorVenda = 849.00m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                new() {
+                    Id = 14,
+                    CategoriaId = 11,
+                    Nome = "Suporte de monitor Armstrong",
+                    Descricao = "Suporte de Monitor Armstrong DUO Branco - Elements",
+                    ValorCusto = 590.95m,
+                    ValorVenda = 849.00m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                new() {
+                    Id = 15,
+                    CategoriaId = 11,
+                    Nome = "Suporte Articulado Zinnia Nimbo",
+                    Descricao = "Suporte Articulado Com Pistao a Gas Para Monitor Zinnia Nimbo 100, 17 Pol. a 27 Pol., Branco, ZNO-ZNNBO100-WH01",
+                    ValorCusto = 100.99m,
+                    ValorVenda = 129.99m,
                     QtdeEstoque = 20,
                     Destaque = false
                 },
