@@ -27,16 +27,88 @@ namespace LojaEstiloWeb.Data;
             builder.Entity<Categoria>().HasData(categorias);
 
             List<Produto> produtos = new() {
+                //mesas
                 new() {
                     Id = 1,
-                    CategoriaId = 1,
-                    Nome = "",
-                    Descricao = "",
-                    ValorCusto = "",
-                    ValorVenda = "",
-                    QtdeEstoque = ,
+                    CategoriaId = 5,
+                    Nome = "Mesa Kuadra",
+                    Descricao = "Mesa para Escritório Diretor Estilo Industrial 150cm Kuadra",
+                    ValorCusto = 301.00m,
+                    ValorVenda = 420.00m,
+                    QtdeEstoque = 20,
                     Destaque = true
-                }
+                },
+                new() {
+                    Id = 2,
+                    CategoriaId = 5,
+                    Nome = "Mesa Gamer Para Computador Rubi",
+                    Descricao = "Mesa Para Computador Gamer Rubi - Branca - 156 cm",
+                    ValorCusto = 320.00m,
+                    ValorVenda = 420.00m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                new() {
+                    Id = 3,
+                    CategoriaId = 5,
+                    Nome = "Mesa Gamer XT Racer Space One",
+                    Descricao = "Mesa Gamer e Escritório XT Racer Space One",
+                    ValorCusto = 529.98m,
+                    ValorVenda = 566.98m,
+                    QtdeEstoque = 20,
+                    Destaque = true
+                },
+                new() {
+                    Id = 4,
+                    CategoriaId = 5,
+                    Nome = "Escrivaninha Max Zanzini",
+                    Descricao = "Escrivaninha Em L Max Zanzini",
+                    ValorCusto = 249.00m,
+                    ValorVenda = 411.78m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                //mouse pads
+                new() {
+                    Id = 5,
+                    CategoriaId = 8,
+                    Nome = "Mouse pad Firelison de carregamento sem fio",
+                    Descricao = "Mouse pad de carregamento sem fio Firelison 2 em 1",
+                    ValorCusto = 310.90m,
+                    ValorVenda = 411.78m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                new() {
+                    Id = 6,
+                    CategoriaId = 8,
+                    Nome = "Mouse Pad Gamer Criarte",
+                    Descricao = "Mouse Pad Gamer Criarte, Speed Extra Grande, Abstract Premium, Preto E Branco - 70x30 Cm",
+                    ValorCusto = 35.90m,
+                    ValorVenda = 55.90m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                new() {
+                    Id = 7,
+                    CategoriaId = 8,
+                    Nome = "Mousepad Techsource Black V2",
+                    Descricao = "Mousepad Techsource - Topo Black V2",
+                    ValorCusto = 160.50m,
+                    ValorVenda = 178.54m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
+                new() {
+                    Id = 7,
+                    CategoriaId = 8,
+                    Nome = "Mouse Pad Corsair",
+                    Descricao = "Mouse Pad Corsair MM700 3XL RGB",
+                    ValorCusto = 650.00m,
+                    ValorVenda = 759.20m,
+                    QtdeEstoque = 20,
+                    Destaque = false
+                },
             };
             builder.Entity<Produto>().HasData(produtos);
 
