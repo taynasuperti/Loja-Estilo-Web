@@ -832,7 +832,7 @@ public class AppDbSeed
                 Id = "ddf093a6-6cb5-9a64-83da34aee005",
                 Email = "taynasuperti@gmail.com",
                 NormalizedEmail = "TAYNASUPERTI@GMAIL.COM",
-                UserName = "@taynasuperti",
+                UserName = "TAYNASUPERTI",
                 NormalizedUserName = "TAYNASUPERTI",
                 LockoutEnabled = true, 
                 EmailConfirmed = true, 
