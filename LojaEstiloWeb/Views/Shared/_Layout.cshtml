@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Projeto desenvolvido para estudo de aplicação web, usando .NET 8 padrão MVC para criação de um site para expor os produtos de uma loja, utilizando SQL Server para o banco de dados." />
-    <meta name="author" content="Tayná Superti"/>
+    <meta name="description"
+        content="Projeto desenvolvido para estudo de aplicação web, usando .NET 8 padrão MVC para criação de um site para expor os produtos de uma loja, utilizando SQL Server para o banco de dados." />
+    <meta name="author" content="Tayná Superti" />
     <title>Estilo Web | @ViewData["Title"]</title>
     <!-- Favicon-->
     @*<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />*@
@@ -18,7 +19,7 @@
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="~/css/styles.css" rel="stylesheet" />
-    <link href="~/css/site.css"   rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,20 +34,26 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="QuemSomos">Quem Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Produtos">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Contatos">Contatos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Home"
+                            asp-action="Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="QuemSomos">Quem Somos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Contatos">Contatos</a>
+                    </li>
                 </ul>
                 <form class="d-flex">
-                    <button class="btn btn-outline-white" type="submit">
-                        <i class="bi-cart-fill me-1" color="#fff"> Carrinho</i>
-
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">
+                    <button class="btn btn-outline- border-white" style="border-radius: 15px;" type="submit">
+                        <i class="bi-cart-fill me-1">Carrinho</i>
+                        <span class="badge bg-white text-dark ms-1 rounded-pill">
                             @ViewData["Carrinho"]
                         </span>
                     </button>
                 </form>
+                <div class="ms-3">
+                    <partial name="_LoginPartial" />
+                </div>
             </div>
         </div>
     </nav>

@@ -838,7 +838,7 @@ public class AppDbSeed
                 EmailConfirmed = true, 
                 Nome = "Tayná Carolina Miguel Superti",
                 DataNascimento = DateTime.Parse("06/11/2006"),
-                Foto = "/img/usuarios/ddf093a6-6cb5-4ff7-9a64-83da34aee005.png"
+                // Foto = "/img/usuarios/no-photo.png" trocar para o caminho da foto do usuario
             }
         };
         foreach (var user in usuarios)
